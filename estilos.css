@@ -1,0 +1,144 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: #ededed; 
+	background: -webkit-linear-gradient(to top, hsla(300, 50%, 90%, 0.500), hsla(200,30%, 60%, 0.290)), url(iso-27001.svg);
+	background: linear-gradient(to top, hsla(300, 50%, 60%, 0), hsla(210, 90%, 40%, 0.593), hsla(200, 40%, 30%, 0.790)), url(iso-27001.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+}
+
+nav {
+    height: 70px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*overflow: hidden;*/
+}
+
+.logo img{
+    height: 100%;
+    width: 100px;
+    margin-left: 20px;
+}
+.menu{
+    display: none;
+}
+.enlaces a{
+    color: #fff;
+    padding-right: 50px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/*Hover*/
+
+.enlaces a:hover{
+    text-decoration: underline;
+}
+
+
+/*Active*/
+
+.enlaces a:hover{
+    color: #00FFEA;
+}
+
+.menu:active{
+    color: purple;
+}
+
+div.titulo{
+    color: #fff;
+    top: 40%;
+    font-weight: bolder;
+    border-radius: 20%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.titulo  h1{
+    font-size: 40px;
+}
+.titulo  h2{
+    font-size: 25px;
+}
+
+div.titulo ::selection{
+    color: red;
+}
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 700px){
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 100%;
+    width: 100px;
+    margin-left: 20px;
+
+}
+.menu{
+    display: block;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+div.enlaces{
+    width: 70%;
+    height: 100vh;
+    top: 70px;
+    background-color: grey;
+    position: absolute;
+    z-index: 200;
+}
+
+.enlaces a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    top: 23%;
+    position: relative;
+}
+
+.uno{
+    transform: translateX(-100%);
+    opacity: 0; 
+    transition: 0.5s ease;
+}
+.dos{
+    opacity: 1;
+    transition:0.5s ease; 
+}
+
+.titulo  h1{
+    font-size: 30px;
+}
+.titulo  h2{
+    font-size: 20px;
+}
+}
