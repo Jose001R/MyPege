@@ -6,7 +6,7 @@
 
 header{
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 	position: relative;
 	background: #ededed; 
 	background: -webkit-linear-gradient(to top, hsla(300, 50%, 90%, 0.500), hsla(200,30%, 60%, 0.290)), url(iso-27001.svg);
